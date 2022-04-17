@@ -166,18 +166,18 @@ nav{
   font-size: 16px;
   margin-top: -8px;
 }
-.skeleton-image {
+.standard-image {
   width: 240px;
   height: 355px;
 }
 
-.skeleton-title {
+.standard-title {
   margin-top: 12px;
   width: 70%;
   height: 24px;
 }
 
-.skeleton-type {
+.standard-type {
   margin-top: 8px;
   width: 20%;
   height: 16px;

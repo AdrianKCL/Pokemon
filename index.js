@@ -6,7 +6,7 @@ const pokemonListEl = document.querySelector('.pokemons');
 
 async function main() {
 
-    skeleton();
+    standard();
 
     const pokemonAPI = await fetch (("https://api.pokemontcg.io/v2/cards?q=name:" + searchQuery), {
         headers: {
@@ -58,13 +58,13 @@ function searchKeyPress(event) {
 }
 
 
-function skeleton() {
-    skeletonHTML = `<div class="pokemon">
+function standard() {
+    standardHTML = `<div class="pokemon">
                         <figure>
-                            <img class="skeleton-image skeleton">
+                            <img class="standard-image standard">
                         </figure>
-                        <h2 class="skeleton-title skeleton"></h2>
-                        <div class="skeleton-type skeleton"></div>
+                        <h2 class="standard-title standard"></h2>
+                        <div class="standard-type standard"></div>
                     </div>`
-    pokemonListEl.innerHTML = skeletonHTML.repeat(10);
+    pokemonListEl.innerHTML = standardHTML.repeat(10);
 }
